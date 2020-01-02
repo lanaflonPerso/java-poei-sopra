@@ -141,7 +141,7 @@ public class Main {
 			String prenom = menu.next();
 			updatePersonne.setNom(nom);
 			updatePersonne.setPrenom(prenom);
-			daoEx.update(updatePersonne);
+			daoEx.update(updatePersonne);			
 		}
 
 		else if (choix == 3) {
@@ -149,7 +149,6 @@ public class Main {
 			int id = menu.nextInt();
 			Personne delPersonne = daoEx.findById(id);
 			System.out.println("Voici la personne à supprimer : " + delPersonne);
-			menu.close();
 			daoEx.remove(delPersonne);
 		}
 
@@ -157,6 +156,7 @@ public class Main {
 			System.out.println("Voici la liste des personnes :");
 			daoEx.getAll().forEach(System.out::println);
 		}
+		menu.close();
 	}
 
 }
