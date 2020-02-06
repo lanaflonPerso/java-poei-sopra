@@ -19,7 +19,7 @@ public class Fenetre1 extends JFrame implements ActionListener {
 		setTitle("Ma première fenêtre");
 		nomLabel.setBounds(20, 20, 100, 20);
 		nomText.setBounds(140, 20, 100, 20);
-		afficherButton.setBounds(140, 60, 100, 20);
+		afficherButton.setBounds(140, 100, 100, 20);
 
 		add(nomLabel);
 		add(nomText);
